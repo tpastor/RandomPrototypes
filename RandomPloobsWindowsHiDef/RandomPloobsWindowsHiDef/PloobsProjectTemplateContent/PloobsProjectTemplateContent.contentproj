@@ -45,11 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Textures\blue.png">
-      <Name>blue</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Textures\coolgrass2DOT3.jpg">
       <Name>coolgrass2DOT3</Name>
       <Importer>TextureImporter</Importer>
