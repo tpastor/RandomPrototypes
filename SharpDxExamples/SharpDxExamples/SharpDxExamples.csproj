@@ -82,14 +82,22 @@
     <Compile Include="NewFolder1\RenderQueue.cs" />
     <Compile Include="NewFolder1\RenderQueueElement.cs" />
     <Compile Include="NewFolder1\RenderQueueId.cs" />
+    <Compile Include="NewFolder2\Class1.cs" />
+    <Compile Include="NewFolder3\CameraFirstPerson.cs" />
+    <Compile Include="NewFolder3\Clock.cs" />
+    <Compile Include="NewFolder3\ICamera.cs" />
+    <Compile Include="NewFolder3\Input.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Resources\jeep1.ms3d" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\jeep1.jpg" />
+    <Content Include="Shaders\MiniTri.fx" />
     <Content Include="sharpdx_direct3d11_effects_x64.dll" />
     <Content Include="sharpdx_direct3d11_effects_x86.dll" />
   </ItemGroup>
