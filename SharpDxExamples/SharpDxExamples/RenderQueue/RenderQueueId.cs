@@ -24,15 +24,16 @@ namespace EngineTestes.RQueue
          * */
         long id;
 
-        int fullscreenLayer;
-        int viewPort;
-        int viewportLayer; 
-        int translucency;
-        int depthSorting;
-        int materialid;
-        int extra;
+        public readonly long fullscreenLayer;
+        public readonly long viewPort;
+        public readonly long viewportLayer;
+        public readonly long translucency;
+        public readonly long depthSorting;
+        public readonly long materialid;
+        public readonly long extra;
+        bool flipMaterialWithSorting = false;
 
-        public void Create(int fullscreenLayer, int viewPort, int viewportLayer, int translucency, int extra, int depthSorting, int material)
+        public RenderQueueId(int fullscreenLayer, int viewPort, int viewportLayer, int translucency, int extra, int depthSorting, int material)
         {
             this.fullscreenLayer = fullscreenLayer;
             this.viewportLayer = viewportLayer;
@@ -50,28 +51,43 @@ namespace EngineTestes.RQueue
             }
         }
 
+        //public long GetMaterialMask()
+        //{
+        //    if (flipMaterialWithSorting)
+        //    {
+        //        return (16777215L << 24);
+        //    }
+        //    else
+        //    {
+        //        return 16777215L;
+        //    }
+            
+        //}
+
         public long GenerateId(bool flipMaterialWithSorting = false)
         {
+            this.flipMaterialWithSorting = flipMaterialWithSorting;
+
             if (flipMaterialWithSorting)
             {
-                id = fullscreenLayer << 64
-                    | viewPort << 62
-                    | viewportLayer << 59
-                    | translucency << 56
-                    | extra << 54
-                    | materialid << 48
-                    | depthSorting << 24
+                id = fullscreenLayer << 62
+                    | viewPort << 59
+                    | viewportLayer << 56
+                    | translucency << 54
+                    | extra << 48
+                    | materialid << 24 
+                    | depthSorting 
                     ;
             }
             else
             {
-                id = fullscreenLayer << 64
-                    | viewPort << 62
-                    | viewportLayer << 59
-                    | translucency << 56
-                    | extra << 54
-                    | depthSorting << 48
-                    | materialid << 24
+                id = fullscreenLayer << 62
+                    | viewPort << 59
+                    | viewportLayer << 56
+                    | translucency << 54
+                    | extra << 48
+                    | depthSorting << 34
+                    | materialid 
                     ;                
             }
             return id;

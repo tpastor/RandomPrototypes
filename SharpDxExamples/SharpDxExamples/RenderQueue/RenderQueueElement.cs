@@ -13,7 +13,9 @@ namespace EngineTestes.RQueue
             private set;
         }
 
+        public abstract void InitMaterial();
         public abstract void Draw();
+        public abstract void EndMaterial();
         
     }
 

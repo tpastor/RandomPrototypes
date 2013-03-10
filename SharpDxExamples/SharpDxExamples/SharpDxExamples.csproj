@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="artemis">
+      <HintPath>..\packages\Artemis.1.2.0\lib\net40\artemis.dll</HintPath>
+    </Reference>
     <Reference Include="Assimp">
       <HintPath>..\..\SharedDLLs\Assimp3\Assimp.dll</HintPath>
     </Reference>
@@ -78,10 +81,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewFolder1\MaterialIdGenerator.cs" />
-    <Compile Include="NewFolder1\RenderQueue.cs" />
-    <Compile Include="NewFolder1\RenderQueueElement.cs" />
-    <Compile Include="NewFolder1\RenderQueueId.cs" />
+    <Compile Include="RenderQueue\MaterialIdGenerator.cs" />
+    <Compile Include="RenderQueue\RenderQueue.cs" />
+    <Compile Include="RenderQueue\RenderQueueElement.cs" />
+    <Compile Include="RenderQueue\RenderQueueId.cs" />
     <Compile Include="NewFolder2\Class1.cs" />
     <Compile Include="NewFolder3\CameraFirstPerson.cs" />
     <Compile Include="NewFolder3\Clock.cs" />

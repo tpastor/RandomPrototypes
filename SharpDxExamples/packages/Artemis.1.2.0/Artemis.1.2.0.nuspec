@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Artemis</id>
+    <version>1.2.0</version>
+    <title>Entity System Artemis for Games</title>
+    <authors>Thiago Dias Pastor and Alisson Cavalcante Agiani</authors>
+    <owners>Thiago Dias Pastor and Alisson Cavalcante Agiani</owners>
+    <licenseUrl>https://github.com/thelinuxlich/artemis_CSharp/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>http://thelinuxlich.github.com/artemis_CSharp/</projectUrl>
+    <iconUrl>http://gamadu.com/artemis/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Born as a port of the awesome Entity System framework Artemis (Java - http://gamadu.com/). Now it is a full featured, high performance plataform for building games based on Entity System paradigm.</description>
+    <summary>Entity Systems offer an architectural approach to object design that fits well with games, where requirements and behaviours need to be tweaked or swapped out constantly.</summary>
+    <releaseNotes>The main Changes on this version are:
+
+-Added Aspect Support (New flexible way of filtering entities for systems )
+-Added Support for C# Attributes (for pool specification, system and templates creation)
+-Added Pools  for Components and Entities
+-Added Support for EntityTemplates
+-Enhanced EntityWorld Interface (no need to use lots of Managers, everything is packed on EntityWorld class)
+-Enhanced ComponentMapper
+-Enhanced MultiThread Support
+-Enhanced Queue Based Systems
+-More Unit Tests (Integrated with Visual Studio 2012)
+-Support for All .Net Based Platforms (Windows Phone 7, Windows phone 8, Metro Apps, Xbox 360, PC, Mono, MonoTouch and MonoDroid)</releaseNotes>
+    <copyright>Copyright © 2013 Pastor/Agiani, All rights reserved</copyright>
+    <language>pt-BR</language>
+    <tags>entity system, games, framework</tags>
+    <references>
+      <reference file="artemis.dll" />
+      <reference file="ArtemisWS.dll" />
+      <reference file="Artemis_W8Portable.dll" />
+      <reference file="ArtemisPhone7.dll" />
+      <reference file="ParallelTasks.dll" />
+    </references>
+  </metadata>
+</package>
